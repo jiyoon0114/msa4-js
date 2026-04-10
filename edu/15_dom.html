@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Html가 작성되고 불러와야하는 js가 있고 그전에도 할수있는 js가 있음 -->
+  <script src="./15_dom.js" defer></script> 
+  <!-- defer을 추가하면 script를 읽지만 html 모든 태그를 읽고 실행할수있도록 지연시킴 -->
+  <link rel="stylesheet" href="./15_dom.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  </div>
+  <h1 id="title" class="display-none">DOM 제목</h1>
+  <h1 class="title2">DOM 제목2</h1>
+  <input type="text" class="set-attr">
+</body>
+</html>
