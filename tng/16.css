@@ -10,15 +10,14 @@ body {
 }
 
 .container {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  position: absolute;
+  background-color: antiquewhite;
+  padding: 15px;
 }
 
 .box {
   width: 150px;
   height: 150px;
-  position: absolute;
   background-color: rgb(245, 245, 255);
 }
 
