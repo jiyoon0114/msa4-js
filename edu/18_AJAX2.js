@@ -12,6 +12,7 @@ form.addEventListener('submit', async(e) => {
   const pageInput = form['page'].value;
   const pagelimit = form['limit'].value;
   const url = `${baseUrl}?page=${pageInput}&limit=${pagelimit}`;
+  console.log(url);
 
   try {
     const response = await axios.get(url);
@@ -25,7 +26,7 @@ form.addEventListener('submit', async(e) => {
       newCardImg.classList.add('card-img');
 
       const newAuthor = document.createElement('span');
-      newAuthor.textContent = `${item.id} ${item.author}`;
+      newAuthor.textContent = `${item.id}: ${item.author}`;
 
       const newCard = document.createElement('div');
       newCard.classList.add('card');
